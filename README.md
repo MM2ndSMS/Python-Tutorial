@@ -99,6 +99,68 @@ print(x + y + z)
 x = 5
 y = "SHIN"
 print(x, y)
-##
+### Python - Global Variables
+## Global Variables
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+## The global Keyword
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+### Python Data Types
+## Getting the Data Type
+x = 5
+print(type(x))
+### 파이썬 숫자
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+print(type(x))
+print(type(y))
+print(type(z))
+## Int
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+
+
+
+
+
+
 
 
